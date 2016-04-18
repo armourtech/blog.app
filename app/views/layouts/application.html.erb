@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campfire</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= link_to 'Home', root_path %>
+<%= link_to 'New Post', new_post_path %>
+
+<h3> Hi I am campfire and I am running on Ruby On Rails!</h3>
+<%= yield %>
+
+</body>
+</html>
