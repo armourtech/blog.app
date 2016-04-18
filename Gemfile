@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'pg'
+
+gem 'sqlite3'
+
+gem 'rails_12factor'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -45,7 +50,7 @@ group :development do
   gem 'spring'
 end
 
-group :development do
+=begingroup :development do
 	gem 'sqlite3'
 end
 
@@ -53,3 +58,4 @@ group :production do
 	gem 'pg'
 	gem 'rails_12factor'
 end
+=end
